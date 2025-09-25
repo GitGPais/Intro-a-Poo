@@ -34,7 +34,7 @@ public class Libro {
         if (año >= 1450 && año <= 2025) {
             this.añoPublicacion = año;
         } else {
-            System.out.println("⚠️ Año inválido. Debe estar entre 1450 y 2025.");
+            System.out.println("Año inválido. Debe estar entre 1450 y 2025.");
         }
     }
 

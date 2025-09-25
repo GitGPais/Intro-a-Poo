@@ -1,9 +1,6 @@
 package tp3_poo_ejercicios;
 
-/**
- * Clase que representa una gallina en una granja digital.
- * Modela su edad, producción de huevos y estado actual.
- */
+
 public class Gallina {
     private int idGallina;
     private int edad;

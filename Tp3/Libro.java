@@ -1,10 +1,6 @@
 package tp3_poo_ejercicios;
 
-/**
- * Clase que representa un libro con atributos privados.
- * Aplica encapsulamiento estricto y validación en el setter.
- */
-public class Libro {
+Class Libro {
     private String titulo;
     private String autor;
     private int añoPublicacion;

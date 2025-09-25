@@ -1,9 +1,6 @@
 package tp3_poo_ejercicios;
 
-/**
- * Clase que representa una nave espacial con capacidad de combustible.
- * Simula despegues y recargas con validaciones internas.
- */
+
 public class NaveEspacial {
     private String nombre;
     private int combustible; // en unidades
@@ -18,7 +15,7 @@ public class NaveEspacial {
 
     // Método para mostrar estado actual
     public void mostrarEstado() {
-        System.out.println("🚀 Nave: " + nombre);
+        System.out.println(" Nave: " + nombre);
         System.out.println("Combustible: " + combustible + " unidades");
         System.out.println("Estado: " + (enOrbita ? "En órbita" : "En tierra"));
         System.out.println("---------------------------");
@@ -27,11 +24,11 @@ public class NaveEspacial {
     // Método para intentar despegar
     public void despegar() {
         if (enOrbita) {
-            System.out.println("⚠️ La nave ya está en órbita.");
+            System.out.println("La nave ya está en órbita.");
         } else if (combustible >= 50) {
             combustible -= 50;
             enOrbita = true;
-            System.out.println("✅ Despegue exitoso.");
+            System.out.println("Despegue exitoso.");
         } else {
             System.out.println("❌ Combustible insuficiente para despegar.");
         }
@@ -41,19 +38,19 @@ public class NaveEspacial {
     public void recargar(int unidades) {
         if (unidades > 0) {
             combustible += unidades;
-            System.out.println("🔋 Combustible recargado: +" + unidades + " unidades.");
+            System.out.println("Combustible recargado: +" + unidades + " unidades.");
         } else {
-            System.out.println("⚠️ La cantidad debe ser positiva.");
+            System.out.println("La cantidad debe ser positiva.");
         }
     }
 
     // Método para aterrizar
     public void aterrizar() {
         if (!enOrbita) {
-            System.out.println("⚠️ La nave ya está en tierra.");
+            System.out.println("La nave ya está en tierra.");
         } else {
             enOrbita = false;
-            System.out.println("🛬 Aterrizaje exitoso.");
+            System.out.println("Aterrizaje exitoso.");
         }
     }
 }
